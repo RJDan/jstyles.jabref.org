@@ -1,0 +1,77 @@
+# This file is licensed under the terms of the GPL version 2 (or later).
+# Written by R. J. Daniels
+# Base on instructions from here : https://authorservices.wiley.com/asset/Wiley-Journals-Style-Manual.pdf
+
+## Issues remaining
+# to confirm formatting for non-journal entries
+
+NAME
+MolEcol_apa Author-year citation
+
+JOURNALS
+Molecular Ecology
+
+PROPERTIES
+Title="References"
+IsSortByPosition="false"
+IsNumberEntries="false"
+ReferenceParagraphFormat="Hanging Indent"
+ReferenceHeaderParagraphFormat="Heading 1"
+
+CITATION
+AuthorField="author/editor"
+YearField="year"
+MaxAuthors="2"
+MaxAuthorsFirst="2"
+AuthorSeparator=", "
+AuthorLastSeparator=" & "
+AuthorLastSeparatorInText= " and "
+EtAlString=" et al."
+YearSeparator=", "
+InTextYearSeparator=" "
+BracketBefore="("
+BracketAfter=")"
+BracketBeforeInList="("
+BracketAfterInList=")"
+CitationSeparator="; "
+UniquefierSeparator=","
+GroupedNumbersSeparator="-"
+MinimumGroupingCount="3"
+FormatCitations="false"
+CitationCharacterFormat="Text Body"
+MultiCiteChronological="false"
+
+LAYOUT
+
+default=\begin{author}\format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\author}\end{author}\begin{year} (\year\uniq)\end{year}\begin{!year} (\format[HTMLChars]{no year})\end{!year}\begin{title}. \format[FormatChars]{\title}\end{title}\begin{journal}. <i>\format[JournalAbbreviator]{\journal}</i>\end{journal}\begin{volume}, \format[FormatChars]{\volume}\end{volume}\begin{number}(\number)\end{number}\begin{pages}, \format[FormatPagesForHTML]{\pages}\end{pages}.\begin{doi} \format[DOICheck]{\doi}\end{doi}
+
+article=\begin{author}\format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\author}\end{author}\begin{year} (\year\uniq)\end{year}\begin{!year} (\format[HTMLChars]{no year})\end{!year}\begin{title}. \format[FormatChars]{\title}\end{title}\begin{journal}. <i>\format[JournalAbbreviator]{\journal}</i>\end{journal}\begin{volume}, \format[FormatChars]{\volume}\end{volume}\begin{number}(\number)\end{number}\begin{pages}, \format[FormatPagesForHTML]{\pages}\end{pages}.\begin{doi} \format[DOICheck]{\doi}\end{doi}
+
+preprint=\begin{author}\format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\author}\end{author}\begin{year} (in press)\end{year}\begin{title}. \format[FormatChars]{\title}\end{title}\begin{journal}. <i>\format[JournalAbbreviator]{\journal}</i>\end{journal}.\begin{doi} \format[DOICheck]{\doi}\end{doi}
+
+book=\begin{author}\format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\author}\end{author}\begin{editor} \format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\editor} (\format[IfPlural(Eds.,Ed.)]{\editor})\end{editor}\begin{year}. (\year\uniq)\end{year}\begin{!year} (\format[HTMLChars]{no year})\end{!year}\begin{title}. <i>\format[FormatChars]{\title} </i>\end{title}\begin{edition} (\edition ed.)\end{edition}\begin{volume} (Vol. \volume)\end{volume}\begin{publisher}. \format[FormatChars]{\publisher}\end{publisher}.\begin{url} \url\end{url}
+
+inbook=\begin{author}\format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\author}\end{author}\begin{year} (\year\uniq)\end{year}\begin{!year} (\format[HTMLChars]{no year})\end{!year}\begin{chapter}. \format[HTMLChars]{\chapter}\end{chapter}. In\begin{editor} \format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\editor} (\format[IfPlural(Eds.,Ed.)]{\editor})\end{editor}\begin{title}, <i>\format[FormatChars]{\title}</i>\end{title}\begin{volume} (Vol. \volume)\end{volume}\begin{pages|edition} (\begin{edition} (\edition ed.)\end{edition}\begin{pages} pp. \format[FormatPagesForHTML]{\pages}\end{pages})\end{pages|edition}\begin{publisher}. \format[FormatChars]{\publisher}\end{publisher}.\begin{doi}. \format[DOICheck]{\doi}\end{doi}
+
+incollection=\begin{author}\format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\author}\end{author}\begin{year} (\year\uniq)\end{year}\begin{!year} (\format[HTMLChars]{no year})\end{!year}\begin{title}. \format[FormatChars]{\title}\end{title}. In\begin{editor} \format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\editor} (\format[IfPlural(Eds.,Ed.)]{\editor})\end{editor}\begin{title}, <i>\format[FormatChars]{\title}</i>\end{title}\begin{edition} (\edition ed.)\end{edition}\begin{volume} (Vol. \volume)\end{volume}\begin{publisher} \format[FormatChars]{\publisher}\end{publisher}. 
+
+thesis=\begin{author}\format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\author}\end{author}\begin{year} (\year\uniq)\end{year}\begin{!year} (\format[HTMLChars]{no year})\end{!year}\begin{title}. <i>\format[FormatChars]{\title}</i>\end{title}\begin{type}. [\format{\type}]\end{type}\begin{school}. \format{\school}\format{\school}\begin{location}, \location\end{location}\end{school}.\begin{doi} \format[DOICheck]{\doi}\end{doi}\begin{url} \url\end{url}
+
+inproceedings=\begin{author}\format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\author}\end{author}\begin{year} (\year\uniq)\end{year}\begin{!year} (\format[HTMLChars]{no year})\end{!year}\begin{title}. <i>\format[FormatChars]{\title}</i>\end{title}. In\begin{editor} \format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\editor} (\format[IfPlural(Eds.,Ed.)]{\editor})\end{editor}\begin{booktitle}, <i>\format[FormatChars]{\booktitle}</i>\end{booktitle}\begin{pages} (pp. \format[FormatPagesForHTML]{\pages})\end{pages}\begin{publisher}. \format[FormatChars]{\publisher}\end{publisher}.\begin{doi} \format[DOICheck]{\doi}\end{doi}\begin{url} \url\end{url}
+
+techreport=\begin{author}\format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\author}\end{author}\begin{year} (\year\uniq)\end{year}\begin{!year} (\format[HTMLChars]{no year})\end{!year}\begin{title}. \format[FormatChars]{\title} \begin{number|type}(\type \number)\end{number|type}\end{title}\begin{publisher}. \format[FormatChars]{\publisher}\end{publisher}\begin{institution}. \format[FormatChars]{\institution}\end{institution}\begin{doi}. \format[DOICheck]{\doi}\end{doi}\begin{url} \url\end{url}
+
+######
+
+#misc=\begin{author}\format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\author}\end{author}\begin{year} (\year\uniq)\end{year}\begin{!year} (\format[HTMLChars]{no year})\end{!year}\begin{title}. <i>\format[FormatChars]{\title}</i>\end{title} (\format{\howpublished}) \format{\url}
+
+
+#manual=\begin{author}\format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\author} \end{author}(\format[FormatChars]{\year}\uniq). \title. \Note. \Url.
+
+
+#electronic=\begin{author}\format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\author}\end{author}\begin{year} (\year\uniq)\end{year}\begin{!year} (\format[HTMLChars]{no year})\end{!year}\begin{title}. <i>\format[FormatChars]{\title}</i>\end{title} \begin{howpublished} \howpublished.\end{howpublished}\begin{organization} \format{\organization},\end{organization}\begin{url} \url\end{url}
+
+#software=\begin{author}\format[FormatChars,Authors(LastFirst,Initials,sep=\, ,LastSep= & ,EtAl= et al.,20,7)]{\author}\end{author}\begin{year} (\year\uniq)\end{year}\begin{!year} (\format[HTMLChars]{no year})\end{!year}\begin{title}. <i>\format[FormatChars]{\title}</i>\end{title} \begin{howpublished} \howpublished.\end{howpublished}\begin{organization} \format{\organization},\end{organization}\begin{note} \note \end{note}\begin{url}\url\end{url}
+
+
+
